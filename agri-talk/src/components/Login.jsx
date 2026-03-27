@@ -15,7 +15,7 @@ function Login({ onLogin }){
     const [password, setPassword] = useState("")
     // 一旦簡単にしているけどパスワードはハッシュ化すること
     const handleLogin = () => {
-        alret('認証は一旦パス: ${username}');
+        alert(`認証は一旦パス: ${username}`);
         //でも処理用
         //実際はここでAPIにユーザー名とパスワードを送信して認証
         // 現在はアラートで確認するだけ
@@ -24,7 +24,7 @@ function Login({ onLogin }){
         // これでログイン後に画面を切り替えることができる
     };
 
-    Return(
+    return(
         <div className = "login-box">
             <h2>AgriTalk ログイン</h2>
 
