@@ -1,34 +1,85 @@
-.title-screen {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(to bottom, #a8e063, #56ab2f);
+/* ------------------ */
+/* 全体スクロール禁止 */
+/* ------------------ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* スクロール禁止 */
+  font-family: sans-serif;
+}
+
+/* ------------------ */
+/* 背景画像 wrapper */
+/* ------------------ */
+.background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* 余白は隠す */
+  z-index: -1;
+}
+
+.background-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 画像全体を表示 */
+  object-position: center center; /* 中央固定 */
+}
+
+/* ------------------ */
+/* タイトル文字 */
+/* ------------------ */
+.title-container {
+  position: absolute;
+  top: 40%; /* 50%が画面中央 少なるごとに上へ*/
+  left: 50%;
+  transform: translate(-50%, -60%); /* X: -50%で中央、Y: -60%で少し上 */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  overflow: hidden;
-  cursor: pointer;
-  color: white;
-  font-family: sans-serif;
-  background-image: url('/images/bg.jpg');
 }
 
-.title-screen h1 {
+.title-container h1 {
   font-size: 3rem;
+  margin: 0;
 }
 
-.start-text {
-  opacity: 0;
+.title-container p {
   font-size: 1.5rem;
   margin-top: 20px;
+  opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
-.start-text.fade-in {
+.start-text {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.bg-text {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.title-container h1,
+.title-container p {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.title-container.fade-in p {
   opacity: 1;
 }
 
+/* ------------------ */
+/* 波紋アニメーション */
+/* ------------------ */
 .ripple {
   position: absolute;
   width: 200px;
@@ -40,17 +91,13 @@
 }
 
 @keyframes ripple {
-  from {
-    transform: scale(0);
-    opacity: 0.5;
-  }
-  to {
-    transform: scale(10);
-    opacity: 0;
-  }
+  from { transform: scale(0); opacity: 0.5; }
+  to { transform: scale(10); opacity: 0; }
 }
 
+/* ------------------ */
 /* Login画面用 */
+/* ------------------ */
 .login-screen {
   width: 100vw;
   height: 100vh;

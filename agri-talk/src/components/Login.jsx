@@ -4,7 +4,7 @@ import React, { useState } from "react";
 // Reactをインポート
 // useStateは入力値や状態を管理するためのreactフック
 
-import "agri-talk/src/components/Login.css"
+import "./Login.css"
 // CSSファイルをインポート
 // 見た目の装飾はCSSでまとめて管理する
 
