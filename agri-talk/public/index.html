@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -7,37 +7,43 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Create React Appで作成されたWebサイト"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
     <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      manifest.json は、WebアプリをスマートフォンやPCにインストールする際に使われるメタデータを提供します。
+      詳しくは: https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <!--
+      上記のタグでは %PUBLIC_URL% を使用しています。
+      これはビルド時に public フォルダのURLに置き換えられます。
+
+      public フォルダ内のファイルのみ、このHTMLから参照できます。
+
+      "/favicon.ico" や "favicon.ico" と違い、
+      "%PUBLIC_URL%/favicon.ico" はクライアントサイドルーティングや
+      ルート以外のURLでも正しく動作します。
+
+      非ルートURLの設定方法は `npm run build` を実行して確認してください。
     -->
-    <title>React App</title>
+    <title>Reactアプリ</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>このアプリを実行するにはJavaScriptを有効にしてください。</noscript>
     <div id="root"></div>
+
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      このHTMLファイルはテンプレートです。
+      ブラウザで直接開いても、空白のページが表示されます。
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      Webフォント、メタタグ、解析ツールなどはこのファイルに追加できます。
+      ビルドすると、バンドルされたスクリプトが <body> に挿入されます。
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      開発を開始するには `npm start` または `yarn start` を実行してください。
+      本番用ビルドを作成するには `npm run build` または `yarn build` を実行してください。
     -->
   </body>
 </html>
