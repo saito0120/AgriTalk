@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/AgriTalk/static/css/main.334e8a17.css",
+    "main.css": "/AgriTalk/static/css/main.d51b1653.css",
     "main.js": "/AgriTalk/static/js/main.187a9e03.js",
     "index.html": "/AgriTalk/index.html",
-    "main.334e8a17.css.map": "/AgriTalk/static/css/main.334e8a17.css.map",
+    "main.d51b1653.css.map": "/AgriTalk/static/css/main.d51b1653.css.map",
     "main.187a9e03.js.map": "/AgriTalk/static/js/main.187a9e03.js.map"
   },
   "entrypoints": [
-    "static/css/main.334e8a17.css",
+    "static/css/main.d51b1653.css",
     "static/js/main.187a9e03.js"
   ]
 }
