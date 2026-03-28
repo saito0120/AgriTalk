@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AgriTalk/static/css/main.f855e6bc.css",
+    "main.js": "/AgriTalk/static/js/main.4de63b48.js",
+    "index.html": "/AgriTalk/index.html",
+    "main.f855e6bc.css.map": "/AgriTalk/static/css/main.f855e6bc.css.map",
+    "main.4de63b48.js.map": "/AgriTalk/static/js/main.4de63b48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.4de63b48.js"
+  ]
+}
